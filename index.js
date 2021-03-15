@@ -8,7 +8,8 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/mensajes', (req, res) => {
-      res.send("hola")
+     // res.send(JSON.stringify({}))
+      res.send('hola');
    })
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
